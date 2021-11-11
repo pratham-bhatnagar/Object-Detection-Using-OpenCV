@@ -102,7 +102,7 @@ file_path_temp= filedialog.askopenfilename(initialdir= os.getcwd(),title="Select
 </tr>
 <tr>
 <td>
-    <img alt="Input Image" src="images/img3.jpg" height="400 x    " />
+    <img alt="Input Image" src="images/img3.jpg" height="250 x    " />
     </td>
     <td>
     <div align="center">
@@ -110,7 +110,7 @@ file_path_temp= filedialog.askopenfilename(initialdir= os.getcwd(),title="Select
      </div>
     </td>
     <td>
-    <img alt="Result Image" src="images/result3.jpg" height="400 x    "/>
+    <img alt="Result Image" src="images/result3.jpg" height="250 x    "/>
    </td>
 </tr>
 <tr>
@@ -148,13 +148,16 @@ Getting the height and width of the template image using `.shape` method.
     h ,w = template.shape
 ```
 ***
-<img alt="error" src="images/error.png" />
-```py
-except cv2.error:
-    messagebox.showinfo("No Image Found","No Image Found!")
-    sys.exit(0)
 
+## Error dialogue box using Tkinter
+<img alt="error" src="images/error.png" />
+ 
+ ```py
+except cv2.error:
+    messagebox.showinfo("Warning!","No Image Found!")
+    sys.exit(0)
 ```
+
 ***
 `cv2.matchTemplate` is used to comapare images. It gives a 2D-array as output. 
 ```python
