@@ -31,7 +31,7 @@ from tkinter import filedialog
 import os
 ```
 ***
-## Taking Uer Input using TKinter
+## Taking User Input using TKinter
 ```py
 root = tk.Tk() 
 root.withdraw() 
