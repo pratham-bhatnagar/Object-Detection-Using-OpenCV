@@ -33,12 +33,10 @@ import sys
 
 ```
 ***
+<div align="center">
+<h2>Taking Image input using Tkinter</h2>
+</div>
 <table>
-<tr>
-    <td>
-        <b>Image input using Tkinter</b>
-    </td>
-</tr>
 <tr>
     <td>
         <b>Base Image Input</b>
@@ -49,7 +47,7 @@ import sys
 
 </tr>
 <tr>
-<td><img alt="Base Image Input" src="images/base_image_ss.png" /></td>
+<td><img alt="Base Image Input" src="images/base_input_ss.png" /></td>
 <td><img alt="Template Image Input" src="images/temp_input.png" /></td>
 </tr> 
 </table>
