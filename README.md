@@ -1,7 +1,6 @@
-<h1> Object Detection Project Using OpenCV </h1> 
 <div align="center">
-    <h2>Where's Waldo!</h2>
-  <img alt="Where's Waldo!" src="images/wheres-waldo-logo.jpg" height="150 x    " />
+   <h1> Object Detection Project Using OpenCV </h1> 
+  <img alt="projectLogo" src="images/projectLogo.jpg" />
 </div>
 
 
@@ -19,13 +18,25 @@ height="40"></img></a>&nbsp;&nbsp;
 
 ```
 pip install opencv-python
+pip install Tkinter
 ```
 
 <h2> 📝 CODE EXPLANATION </h2>
-<samp>Importing OpenCV</samp>
+<samp><b>Importing Differnt Libraries</b></samp>
 
 ```python
 import cv2
+import tkinter as tk 
+from tkinter import filedialog 
+import os
+```
+***
+## Taking Uer Input using TKinter
+```py
+root = tk.Tk() 
+root.withdraw() 
+file_path_base = filedialog.askopenfilename(initialdir= os.getcwd(),title="Select Base Image: ")
+file_path_temp= filedialog.askopenfilename(initialdir= os.getcwd(),title="Select Template Image: ")
 ```
 ***
 
@@ -44,45 +55,70 @@ import cv2
 </tr>
 <tr>
     <td>
-    <img alt="Input Image" src="images/wheres_waldo.jpg" height="500 x    " />
+    <img alt="Input Image" src="images/img1.jpg" height="300 x    " />
     </td>
     <td>
     <div align="center">
-    <img alt="Template Image" src="images/temp.jpg" height="500 x    " />
+    <img alt="Template Image" src="images/temp1.jpg" height="100 x    " />
      </div>
     </td>
     <td>
-    <img alt="Result Image" src="images/result1.jpg" height="150 x    "/>
+    <img alt="Result Image" src="images/result1.jpg" height="300 x    "/>
    </td>
 </tr>
+<tr>
 <td>
-    <img alt="Input Image" src="images/grp_img.jpg" height="500 x    " />
+    <img alt="Input Image" src="images/img2.jpg" height="300 x    " />
     </td>
     <td>
     <div align="center">
-    <img alt="Template Image" src="images/grp_img_temp.jpg" height="150 x    " />
+    <img alt="Template Image" src="images/temp2.jpg" height="100 x    " />
      </div>
     </td>
     <td>
-    <img alt="Result Image" src="images/result2.jpg" height="500 x    "/>
+    <img alt="Result Image" src="images/result2.jpg" height="300 x    "/>
    </td>
+</tr>
 <tr>
-    
-
+<td>
+    <img alt="Input Image" src="images/img3.jpg" height="300 x    " />
+    </td>
+    <td>
+    <div align="center">
+    <img alt="Template Image" src="images/temp3.jpg" height="100 x    " />
+     </div>
+    </td>
+    <td>
+    <img alt="Result Image" src="images/result3.jpg" height="300 x    "/>
+   </td>
+</tr>
+<tr>
+<td>
+    <img alt="Input Image" src="images/img4.jpg" height="300 x    " />
+    </td>
+    <td>
+    <div align="center">
+    <img alt="Template Image" src="images/temp4.jpg" height="100 x    " />
+     </div>
+    </td>
+    <td>
+    <img alt="Result Image" src="images/result4.jpg" height="300 x    "/>
+   </td>
 </tr>
 </table>
 
 ```python
-img = cv2.imread(r'D:\projects\AI-ML-MINI-PROJECT-2\Pratham\images\wheres_waldo.jpg')
+img = cv2.imread(file_path_base)
 ```
 ***
 `cv2.cvtColor()`method is used to convert an image from one color space to another. There are more than 150 color-space conversion methods available in OpenCV.
 > Syntax: cv2.cvtColor(image, code, dst, dstCn)
-```py
+
+```python
 
 img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-template = cv2.imread(r'D:\projects\AI-ML-MINI-PROJECT-2\Pratham\images\temp.jpg',0)
+template = cv2.imread(file_path_temp,0)
 ```
 ***
 Getting the height and width of the template image using `.shape` method.
@@ -137,11 +173,6 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 ```
-***
-<h2>✨ OUTPUT </h2>
-<div align="center">
-  <img alt="OUTPUT" src="images/Result.jpg" />
-</div>
 
 <h2>📬 Contact</h2>
 

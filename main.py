@@ -34,7 +34,7 @@ used to mark the mached area
 cv2.rectangle(img, location, (location[0] + w, location[1] + h), (0,0,255), 2)
 cv2.putText(img,"Object Spotted.", (location[0]-40,location[1]-5),font , 1, (0,0,0),2)
 
-cv2.imwrite('images/result2.jpg',img)
+cv2.imwrite('images/result5.jpg',img)
 cv2.imshow('images/Results.jpg',img)
 
 # to wait until any key is pressed
