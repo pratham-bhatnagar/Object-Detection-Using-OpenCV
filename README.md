@@ -148,7 +148,7 @@ cv2.rectangle(img, location, (location[0] + w, location[1] + h), (0,0,255), 2)
 `cv2.putText()` method is used to draw a text string on any image.
 > Syntax: cv2.putText(image, text, start_point, font, fontScale, color, thickness, lineType, bottomLeftOrigin)
 ```py 
-cv2.putText(img,"Waldo Spotted.", (location[0]-40,location[1]-5),font , 1, (0,0,0),2)
+cv2.putText(img,"Object Spotted.", (location[0]-40,location[1]-5),font , 1, (0,0,0),2)
 ```
 ***
 + `cv2.imwrite()` method is used to save an image to any storage device. This will save the image according to the specified format in current working directory.
@@ -157,9 +157,7 @@ cv2.putText(img,"Waldo Spotted.", (location[0]-40,location[1]-5),font , 1, (0,0,
 
 > Syntax: cv2.imshow(window_name, image)
 ```py
-cv2.imwrite('AI-ML-MINI-PROJECT-2\Pratham\grayscale.jpg',img_gray)
-cv2.imshow('grayscale.jpg',img_gray)
-cv2.imwrite('AI-ML-MINI-PROJECT-2\Pratham\Results.jpg',img)
+cv2.imwrite('images/result.jpg',img)
 cv2.imshow('Results.jpg',img)
 ```
 ***
