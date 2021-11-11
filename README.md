@@ -76,7 +76,7 @@ file_path_temp= filedialog.askopenfilename(initialdir= os.getcwd(),title="Select
 </tr>
 <tr>
     <td>
-    <img alt="Input Image" src="images/img1.jpg" height="200 x    " />
+    <img alt="Input Image" src="images/img1.jpg" height="400 x    " />
     </td>
     <td>
     <div align="center">
@@ -84,7 +84,7 @@ file_path_temp= filedialog.askopenfilename(initialdir= os.getcwd(),title="Select
      </div>
     </td>
     <td>
-    <img alt="Result Image" src="images/result1.jpg" height="200 x    "/>
+    <img alt="Result Image" src="images/result1.jpg" height="400 x    "/>
    </td>
 </tr>
 <tr>
@@ -102,7 +102,7 @@ file_path_temp= filedialog.askopenfilename(initialdir= os.getcwd(),title="Select
 </tr>
 <tr>
 <td>
-    <img alt="Input Image" src="images/img3.jpg" height="200 x    " />
+    <img alt="Input Image" src="images/img3.jpg" height="400 x    " />
     </td>
     <td>
     <div align="center">
@@ -110,12 +110,12 @@ file_path_temp= filedialog.askopenfilename(initialdir= os.getcwd(),title="Select
      </div>
     </td>
     <td>
-    <img alt="Result Image" src="images/result3.jpg" height="200 x    "/>
+    <img alt="Result Image" src="images/result3.jpg" height="400 x    "/>
    </td>
 </tr>
 <tr>
 <td>
-    <img alt="Input Image" src="images/img4.jpg" height="200 x    " />
+    <img alt="Input Image" src="images/img4.jpg" height="400 x    " />
     </td>
     <td>
     <div align="center">
@@ -123,7 +123,7 @@ file_path_temp= filedialog.askopenfilename(initialdir= os.getcwd(),title="Select
      </div>
     </td>
     <td>
-    <img alt="Result Image" src="images/result4.jpg" height="200 x    "/>
+    <img alt="Result Image" src="images/result4.jpg" height="400 x    "/>
    </td>
 </tr>
 </table>
