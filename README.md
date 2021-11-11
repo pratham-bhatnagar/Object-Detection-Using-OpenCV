@@ -27,10 +27,33 @@ pip install Tkinter
 ```python
 import cv2
 import tkinter as tk 
-from tkinter import filedialog 
+from tkinter import filedialog,messagebox
 import os
+import sys
+
 ```
 ***
+<table>
+<tr>
+    <td>
+        <b>Image input using Tkinter</b>
+    </td>
+</tr>
+<tr>
+    <td>
+        <b>Base Image Input</b>
+    </td>
+    <td>
+        <b>Template Image Input</b>
+    </td>
+
+</tr>
+<tr>
+<td><img alt="Base Image Input" src="images/base_image_ss.png" /></td>
+<td><img alt="Template Image Input" src="images/temp_input.png" /></td>
+</tr> 
+</table>
+
 ## Taking Uer Input using TKinter
 ```py
 root = tk.Tk() 
@@ -108,7 +131,8 @@ file_path_temp= filedialog.askopenfilename(initialdir= os.getcwd(),title="Select
 </table>
 
 ```python
-img = cv2.imread(file_path_base)
+try:
+    img = cv2.imread(file_path_base)
 ```
 ***
 `cv2.cvtColor()`method is used to convert an image from one color space to another. There are more than 150 color-space conversion methods available in OpenCV.
@@ -116,14 +140,22 @@ img = cv2.imread(file_path_base)
 
 ```python
 
-img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-template = cv2.imread(file_path_temp,0)
+    template = cv2.imread(file_path_temp,0)
 ```
 ***
 Getting the height and width of the template image using `.shape` method.
 ```python
-h ,w = template.shape
+    h ,w = template.shape
+```
+***
+<img alt="error" src="images/error.png" />
+```py
+except cv2.error:
+    messagebox.showinfo("No Image Found","No Image Found!")
+    sys.exit(0)
+
 ```
 ***
 `cv2.matchTemplate` is used to comapare images. It gives a 2D-array as output. 
