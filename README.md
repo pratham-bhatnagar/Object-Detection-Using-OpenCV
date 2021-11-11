@@ -61,7 +61,7 @@ file_path_temp= filedialog.askopenfilename(initialdir= os.getcwd(),title="Select
 ```
 ***
 
-<samp>Loading base image and template image using `cv2.imread()`</samp>
+## Loading base image and template image using `cv2.imread()`
 <table>
 <tr>
     <td>
@@ -76,7 +76,7 @@ file_path_temp= filedialog.askopenfilename(initialdir= os.getcwd(),title="Select
 </tr>
 <tr>
     <td>
-    <img alt="Input Image" src="images/img1.jpg" height="300 x    " />
+    <img alt="Input Image" src="images/img1.jpg" height="200 x    " />
     </td>
     <td>
     <div align="center">
@@ -84,12 +84,12 @@ file_path_temp= filedialog.askopenfilename(initialdir= os.getcwd(),title="Select
      </div>
     </td>
     <td>
-    <img alt="Result Image" src="images/result1.jpg" height="300 x    "/>
+    <img alt="Result Image" src="images/result1.jpg" height="200 x    "/>
    </td>
 </tr>
 <tr>
 <td>
-    <img alt="Input Image" src="images/img2.jpg" height="300 x    " />
+    <img alt="Input Image" src="images/img2.jpg" height="200 x    " />
     </td>
     <td>
     <div align="center">
@@ -97,12 +97,12 @@ file_path_temp= filedialog.askopenfilename(initialdir= os.getcwd(),title="Select
      </div>
     </td>
     <td>
-    <img alt="Result Image" src="images/result2.jpg" height="300 x    "/>
+    <img alt="Result Image" src="images/result2.jpg" height="200 x    "/>
    </td>
 </tr>
 <tr>
 <td>
-    <img alt="Input Image" src="images/img3.jpg" height="300 x    " />
+    <img alt="Input Image" src="images/img3.jpg" height="200 x    " />
     </td>
     <td>
     <div align="center">
@@ -110,12 +110,12 @@ file_path_temp= filedialog.askopenfilename(initialdir= os.getcwd(),title="Select
      </div>
     </td>
     <td>
-    <img alt="Result Image" src="images/result3.jpg" height="300 x    "/>
+    <img alt="Result Image" src="images/result3.jpg" height="200 x    "/>
    </td>
 </tr>
 <tr>
 <td>
-    <img alt="Input Image" src="images/img4.jpg" height="300 x    " />
+    <img alt="Input Image" src="images/img4.jpg" height="200 x    " />
     </td>
     <td>
     <div align="center">
@@ -123,7 +123,7 @@ file_path_temp= filedialog.askopenfilename(initialdir= os.getcwd(),title="Select
      </div>
     </td>
     <td>
-    <img alt="Result Image" src="images/result4.jpg" height="300 x    "/>
+    <img alt="Result Image" src="images/result4.jpg" height="200 x    "/>
    </td>
 </tr>
 </table>
