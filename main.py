@@ -47,3 +47,5 @@ cv2.imshow('images/Results.jpg',img)
 cv2.waitKey(0)
 # using 'cv2.destroyAllWindows()' method to destroy all windows whenever any key is pressed
 cv2.destroyAllWindows()
+
+# Code my Pratham Bhatnagar
