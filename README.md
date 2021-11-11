@@ -36,24 +36,39 @@ import cv2
         <b>Input Image</b>
     </td>
     <td>
-        <b>Grayscaled</b>
+        <b>Template Image</b>
     </td>
     <td>
-        <b>Template Image</b>
+        <b>Result Image</b>
     </td>
 </tr>
 <tr>
     <td>
-    <img alt="Where's Waldo!" src="images/wheres_waldo.jpg" height="500 x    " />
-    </td>
-    <td>
-    <img alt="Where's Waldo(Grayscaled)" src="images/grayscale.jpg" height="500 x    " />
+    <img alt="Input Image" src="images/wheres_waldo.jpg" height="500 x    " />
     </td>
     <td>
     <div align="center">
-    <img alt="Template Image" src="images/temp.jpg" height="150 x    "/>
-    </div>
+    <img alt="Template Image" src="images/temp.jpg" height="500 x    " />
+     </div>
     </td>
+    <td>
+    <img alt="Result Image" src="images/result1.jpg" height="150 x    "/>
+   </td>
+</tr>
+<td>
+    <img alt="Input Image" src="images/grp_img.jpg" height="500 x    " />
+    </td>
+    <td>
+    <div align="center">
+    <img alt="Template Image" src="images/grp_img_temp.jpg" height="150 x    " />
+     </div>
+    </td>
+    <td>
+    <img alt="Result Image" src="images/result2.jpg" height="500 x    "/>
+   </td>
+<tr>
+    
+
 </tr>
 </table>
 
